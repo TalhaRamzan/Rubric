@@ -1433,7 +1433,6 @@ this.setVisible(true); // TODO add your handling code here:
         }
             
         String Reg=jTextField7.getText();
-        
         if(!(ValidRegistrationNumber(Reg)))
         {    
         JOptionPane.showMessageDialog(null,"INVALID REGISTRATION NUMBER");
@@ -1444,9 +1443,14 @@ this.setVisible(true); // TODO add your handling code here:
            JOptionPane.showMessageDialog(null,"INVALID NAME");
        } 
       
-       if(Name(Na)&&ValidRegistrationNumber(Reg))
+       if(Name(Na)&&ValidRegistrationNumber(Reg)&&(Email(e)))
        {
-           
+          Student S =new Student();
+          S.setName(Na);
+          S.setRegNo(Reg);
+          S.setEmail(e);
+          JOptionPane.showMessageDialog(null,"AQSA IS THATHI");
+         
            
        }
        else

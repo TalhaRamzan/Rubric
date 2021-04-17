@@ -18,6 +18,7 @@ public class Rubric {
         
         Form1 f =new Form1();
         f.setVisible(true);
+   
         // TODO code application logic here
     }
     
